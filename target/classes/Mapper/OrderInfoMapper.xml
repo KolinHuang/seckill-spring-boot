@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yucaihuang.seckillspringboot.dao.OrderInfoMapper">
+
+    <resultMap id="BaseResultMap" type="OrderInfo">
+        <id property="id" column="id"/>
+        <result property="userId" column="user_id"/>
+        <result property="goodsId" column="goods_id"/>
+        <result property="addrId" column="addr_id"/>
+        <result property="goodsName" column="goods_name"/>
+        <result property="goodsCount" column="goods_count"/>
+        <result property="goodsPrice" column="goods_price"/>
+        <result property="orderChannel" column="order_channel"/>
+        <result property="status" column="status"/>
+        <result property="createDate" column="create_date"/>
+        <result property="payDate" column="pay_date"/>
+    </resultMap>
+
+
+    <select id="queryAllOrderInfo" resultMap="BaseResultMap">
+        select *
+        from order_info
+    </select>
+
+    <select id="queryOrderInfoById" resultMap="BaseResultMap">
+        select *
+        from order_info
+        where id = #{orderId}
+    </select>
+
+    <insert id="insert" parameterType="OrderInfo">
+        insert into order_info(user_id, goods_id, addr_id, goods_name,
+        goods_count, goods_price, order_channel, status, create_date,
+        pay_date)
+        values (#{userId},#{goodsId},#{addrId},#{goodsName},#{goodsCount},
+        #{goodsPrice},#{orderChannel},#{status},#{createDate},#{payDate})
+    </insert>
+
+    <update id="update" parameterType="OrderInfo">
+        update order_info
+        set
+        user_id = #{userId},
+        goods_id = #{goodsId},
+        addr_id = #{addrId},
+        goods_name = #{goodsName},
+        goods_count = #{goodsCount},
+        goods_price = #{goodsPrice},
+        order_channel = #{orderChannel},
+        status = #{status},
+        create_date = #{createDate},
+        pay_date = #{payDate}
+        where id = #{id}
+    </update>
+
+    <update id="updateSelective" parameterType="OrderInfo">
+        update order_info
+        <set>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="goodsId != null">
+                goods_id = #{goodsId},
+            </if>
+            <if test="addrId != null">
+                addr_id = #{addrId},
+            </if>
+            <if test="goodsName != null">
+                goods_name = #{goodsName},
+            </if>
+            <if test="goodsCount != null">
+                goods_count = #{goodsCount},
+            </if>
+            <if test="goodsPrice != null">
+                goods_price = #{goodsPrice},
+            </if>
+            <if test="orderChannel != null">
+                order_channel = #{orderChannel},
+            </if>
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="createDate != null">
+                create_date = #{createDate},
+            </if>
+            <if test="payDate != null">
+                pay_date = #{payDate},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="Long">
+        delete from order_info
+        where id = #{orderId}
+    </delete>
+
+</mapper>
