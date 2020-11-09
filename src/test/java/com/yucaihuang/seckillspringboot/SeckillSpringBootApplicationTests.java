@@ -1,7 +1,12 @@
 package com.yucaihuang.seckillspringboot;
 
+import com.yucaihuang.seckillspringboot.bo.GoodsBo;
 import com.yucaihuang.seckillspringboot.dao.*;
 import com.yucaihuang.seckillspringboot.pojo.*;
+import com.yucaihuang.seckillspringboot.service.OrderService;
+import com.yucaihuang.seckillspringboot.service.SeckillGoodsService;
+import com.yucaihuang.seckillspringboot.service.SeckillOrderService;
+import com.yucaihuang.seckillspringboot.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -85,5 +90,62 @@ class SeckillSpringBootApplicationTests {
 		User user = userMapper.checkPhone("18077200000");
 		System.out.println(user);
 	}
+
+	/**************************service层测试*******************************/
+
+	@Resource
+	OrderService orderService;
+
+	@Resource
+	SeckillGoodsService seckillGoodsService;
+
+	@Resource
+	SeckillOrderService seckillOrderService;
+
+	@Resource
+	UserService userService;
+
+	@Test
+	void testOrderService(){
+		OrderInfo orderInfoById = orderService.getOrderInfoById(42);
+		System.out.println(orderInfoById);
+		orderInfoById.setId(null);
+		orderInfoById.setGoodsName("订单服务测试1");
+		orderService.addOrder(orderInfoById);
+	}
+
+	@Test
+	void testSeckillGoodsService(){
+		GoodsBo goodsBo = seckillGoodsService.getSeckillGoodsBoByGoodsId(1);
+//		System.out.println(goodsBo);
+
+		List<GoodsBo> seckillGoodsList = seckillGoodsService.getSeckillGoodsList();
+//		for (GoodsBo bo : seckillGoodsList) {
+//			System.out.println(bo);
+//		}
+
+		int i = seckillGoodsService.reduceStock(goodsBo.getId());
+		System.out.println(i);
+
+
+	}
+
+	@Test
+	void testSeckillOrderService(){
+		SeckillOrder seckillOrderByUIdAndGId = seckillOrderService.getSeckillOrderByUIdAndGId(1, 2);
+		System.out.println(seckillOrderByUIdAndGId);
+		User user = userService.getUserByPhone("18077200000");
+		String url = seckillOrderService.createUrl(user, 1);
+		System.out.println(url);
+	}
+
+	@Test
+	void testUserService(){
+	}
+
+
+
+
+
 
 }

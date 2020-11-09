@@ -11,4 +11,8 @@ mybatis:
   mapper-locations: classpath:Mapper/*.xml
   config-location: classpath:mybatis/mybatis-config.xml
 
-
+#日志文件位置配置
+logging:
+  file:
+    name: seckill-spring-boot.log
+    path: /
