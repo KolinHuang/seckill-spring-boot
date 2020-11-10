@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService {
         }
         String password = user.getPassword();
         //根据用户的salt生成MD5值，然后跟数据库中的密码数据比对
-        String getPassword = MD5Util.formPassToDBPass(password, user.getSalt());
+        String getPassword = MD5Util.formPassToDBPass(loginParam.getPassword(), user.getSalt());
         if(!StringUtils.equals(getPassword,password)){
             return Result.error(CodeMsg.PASSWORD_ERROR);
         }
@@ -38,5 +38,14 @@ public class UserServiceImpl implements UserService {
     @Override
     public User getUserByPhone(String phone) {
         return userMapper.checkPhone(phone);
+    }
+
+    @Override
+    public int insert(User user) {
+        String password = user.getPassword();
+        String salt = user.getSalt();
+        String pass = MD5Util.inputPassToDbPass(password, salt);
+        user.setPassword(pass);
+        return userMapper.insert(user);
     }
 }

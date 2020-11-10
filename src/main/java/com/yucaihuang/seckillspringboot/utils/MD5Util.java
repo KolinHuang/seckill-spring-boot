@@ -9,7 +9,7 @@ public class MD5Util {
 		return DigestUtils.md5Hex(src);
 	}
 	
-	private static final String salt = "adaadajjJJ1!kkda./";
+	private static final String salt = "9d5b364d";
 	
 	public static String inputPassToFormPass(String inputPass) {
 		String str = ""+salt.charAt(0)+salt.charAt(2) + inputPass +salt.charAt(5) + salt.charAt(4);

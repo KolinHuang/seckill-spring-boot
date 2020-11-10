@@ -87,8 +87,10 @@ class SeckillSpringBootApplicationTests {
 
 	@Test
 	void testUserMapper(){
-		User user = userMapper.checkPhone("18077200000");
-		System.out.println(user);
+
+		User userget = userMapper.checkPhone("15066729719");
+		System.out.println(userget);
+
 	}
 
 	/**************************service层测试*******************************/
@@ -141,6 +143,19 @@ class SeckillSpringBootApplicationTests {
 
 	@Test
 	void testUserService(){
+		User user = new User();
+		user.setUserName("test01");
+		user.setPhone("15067729719");
+		user.setPassword("123456");
+		user.setSalt("9d5b364d");
+		user.setHead("测试用户");
+		user.setLoginCount(1);
+		user.setRegisterDate(new Date());
+		user.setLastLoginDate(new Date());
+		int insert = userService.insert(user);
+		System.out.println(insert);
+		User userByPhone = userService.getUserByPhone("15067729719");
+		System.out.println(userByPhone);
 	}
 
 

@@ -13,4 +13,6 @@ public interface UserService {
     Result<User> login(LoginParam loginParam);
 
     User getUserByPhone(String phone);
+
+    int insert(User user);
 }
