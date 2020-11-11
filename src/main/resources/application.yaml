@@ -15,4 +15,4 @@ mybatis:
 logging:
   file:
     name: seckill-spring-boot.log
-    path: /
+    path: /log
