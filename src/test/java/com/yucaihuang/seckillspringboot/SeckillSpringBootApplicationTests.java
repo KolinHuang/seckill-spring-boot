@@ -12,6 +12,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
@@ -158,6 +160,25 @@ class SeckillSpringBootApplicationTests {
 		System.out.println(userByPhone);
 	}
 
+
+	@Autowired
+	JedisPool jedisPool;
+
+	@Test
+	void testRedis(){
+		Jedis jedis = null;
+		try {
+			jedis = jedisPool.getResource();
+			String test = jedis.get("test");
+			System.out.println(test);
+		}finally {
+			if(jedis!=null){
+				jedis.close();
+			}
+		}
+
+
+	}
 
 
 

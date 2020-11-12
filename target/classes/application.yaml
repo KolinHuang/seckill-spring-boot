@@ -6,6 +6,40 @@ spring:
     password: qazwsxedc7410
     type: com.alibaba.druid.pool.DruidDataSource
 
+  #thymeleaf
+  thymeleaf:
+    cache: false
+    servlet:
+      content-type: text/html
+    enabled: true
+    encoding: utf-8
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+  #redis
+  redis:
+    host: 118.31.103.27
+    port: 6379
+    timeout: 10000
+    jedis:
+      pool:
+        max-idle: 5000
+        max-wait: 10000
+        max-active: 5000
+        min-idle: 0
+    password: 123456
+    database: 0
+
+  resources:
+    add-mappings: true
+    cache:
+      period: 3600
+    chain:
+      cache: true
+      enabled: true
+      html-application-cache: true
+    static-locations: classpath:/static/
+
 mybatis:
   type-aliases-package: com.yucaihuang.seckillspringboot.pojo
   mapper-locations: classpath:Mapper/*.xml
@@ -15,4 +49,7 @@ mybatis:
 logging:
   file:
     name: seckill-spring-boot.log
-    path: /
+    path: /log
+
+
+#静态资源

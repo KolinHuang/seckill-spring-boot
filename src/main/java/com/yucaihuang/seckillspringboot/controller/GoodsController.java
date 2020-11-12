@@ -43,8 +43,10 @@ public class GoodsController {
     @RequestMapping("/detail/{goodsId}")
     @ResponseBody
     public Result<GoodsDetailVo> detail(Model model, @PathVariable("goodsId") long goodsId, HttpServletRequest request){
-
+        //TODO redis读取用户，并返回给前端
         String loginToken = CookieUtils.readLoginToken(request);
+
+        //查找用户的初步实现，通过Cookie保存用户名实现，在redis不可用的情况下使用cookie读取
         Cookie[] cookies = request.getCookies();
         String cookie_userphone = null;
         for (Cookie cookie : cookies) {
@@ -53,7 +55,7 @@ public class GoodsController {
             }
         }
         User user = userService.getUserByPhone(cookie_userphone);
-        //TODO redis读取用户，并返回给前端
+
 
 
         GoodsBo goods = seckillGoodsService.getSeckillGoodsBoByGoodsId(goodsId);

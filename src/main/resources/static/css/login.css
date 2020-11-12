@@ -10,7 +10,7 @@
 
 }
 body{
-    background: url("/img/index_back.png") no-repeat top center fixed;
+    background: url("/static/img/index_back.png") no-repeat top center fixed;
     background-size: 100%;
 }
 .title{

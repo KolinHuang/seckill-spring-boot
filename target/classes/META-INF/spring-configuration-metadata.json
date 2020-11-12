@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "name": "spring.redis.jedis",
+      "type": "com.yucaihuang.seckillspringboot.redis.RedisConfig",
+      "sourceType": "com.yucaihuang.seckillspringboot.redis.RedisConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.redis.jedis.host",
+      "type": "java.lang.String",
+      "sourceType": "com.yucaihuang.seckillspringboot.redis.RedisConfig"
+    },
+    {
+      "name": "spring.redis.jedis.password",
+      "type": "java.lang.String",
+      "sourceType": "com.yucaihuang.seckillspringboot.redis.RedisConfig"
+    },
+    {
+      "name": "spring.redis.jedis.pool-max-active",
+      "type": "java.lang.Integer",
+      "sourceType": "com.yucaihuang.seckillspringboot.redis.RedisConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.redis.jedis.pool-max-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.yucaihuang.seckillspringboot.redis.RedisConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.redis.jedis.pool-max-wait",
+      "type": "java.lang.Integer",
+      "sourceType": "com.yucaihuang.seckillspringboot.redis.RedisConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.redis.jedis.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.yucaihuang.seckillspringboot.redis.RedisConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.redis.jedis.timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.yucaihuang.seckillspringboot.redis.RedisConfig",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}

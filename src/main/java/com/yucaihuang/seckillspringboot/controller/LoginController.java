@@ -33,6 +33,9 @@ public class LoginController {
         Result<User> login = userService.login(loginParam);
         if(login.isSuccess()){
             CookieUtils.writeLoginToken(response, session.getId());
+            //TODO Redis，将用户名+seesionID作为键，登录的数据作为值放入redis，实现免登录
+
+            //免登录的初步实现
             session.setAttribute(session.getId(), loginParam.getMobile());
             //将用户名（电话号码）写入cookie中
             session.setAttribute("userPhone",loginParam.getMobile());
@@ -44,7 +47,6 @@ public class LoginController {
             // 设置为当前项目下都携带这个cookie
             cookie.setPath("/");
             response.addCookie(cookie);
-            //TODO Redis，将用户名+seesionID作为键，登录的数据作为值放入redis
         }
         return login;
     }

@@ -1,0 +1,586 @@
+2020-11-12 14:27:17.920  INFO 59022 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 59022 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 14:27:17.923  INFO 59022 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 14:27:19.091  INFO 59022 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 14:27:19.104  INFO 59022 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 14:27:19.104  INFO 59022 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 14:27:19.193  INFO 59022 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 14:27:19.193  INFO 59022 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1218 ms
+2020-11-12 14:27:20.055  INFO 59022 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:27:20.336  INFO 59022 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 14:27:20.347  INFO 59022 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 3.079 seconds (JVM running for 4.013)
+2020-11-12 14:27:46.339  INFO 59022 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 14:27:46.340  INFO 59022 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 14:27:46.352  INFO 59022 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-11-12 14:29:24.820  INFO 59022 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:29:24.823  INFO 59022 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 14:29:28.508  INFO 59088 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 59088 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 14:29:28.512  INFO 59088 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 14:29:29.607  INFO 59088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 14:29:29.614  INFO 59088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 14:29:29.614  INFO 59088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 14:29:29.663  INFO 59088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 14:29:29.663  INFO 59088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1070 ms
+2020-11-12 14:29:30.151  INFO 59088 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:29:30.326  INFO 59088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 14:29:30.334  INFO 59088 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 2.385 seconds (JVM running for 3.125)
+2020-11-12 14:29:35.762  INFO 59088 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 14:29:35.762  INFO 59088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 14:29:35.766  INFO 59088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-11-12 14:32:35.414  INFO 59088 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:32:35.423  INFO 59088 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 14:32:39.120  INFO 59167 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 59167 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 14:32:39.125  INFO 59167 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 14:32:40.194  INFO 59167 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 14:32:40.200  INFO 59167 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 14:32:40.201  INFO 59167 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 14:32:40.255  INFO 59167 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 14:32:40.255  INFO 59167 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1041 ms
+2020-11-12 14:32:40.731  INFO 59167 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:32:40.907  INFO 59167 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 14:32:40.915  INFO 59167 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 2.338 seconds (JVM running for 3.048)
+2020-11-12 14:32:51.437  INFO 59167 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 14:32:51.437  INFO 59167 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 14:32:51.442  INFO 59167 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-11-12 14:33:56.322  INFO 59167 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:33:56.326  INFO 59167 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 14:33:59.859  INFO 59211 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 59211 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 14:33:59.861  INFO 59211 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 14:34:00.842  INFO 59211 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 14:34:00.848  INFO 59211 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 14:34:00.848  INFO 59211 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 14:34:00.899  INFO 59211 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 14:34:00.899  INFO 59211 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 943 ms
+2020-11-12 14:34:01.404  INFO 59211 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:34:01.572  INFO 59211 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 14:34:01.579  INFO 59211 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 2.224 seconds (JVM running for 2.854)
+2020-11-12 14:34:07.831  INFO 59211 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 14:34:07.831  INFO 59211 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 14:34:07.835  INFO 59211 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-11-12 14:35:30.018  INFO 59211 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:35:30.024  INFO 59211 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 14:35:33.871  INFO 59262 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 59262 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 14:35:33.874  INFO 59262 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 14:35:34.829  INFO 59262 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 14:35:34.835  INFO 59262 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 14:35:34.835  INFO 59262 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 14:35:34.887  INFO 59262 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 14:35:34.887  INFO 59262 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 949 ms
+2020-11-12 14:35:35.415  INFO 59262 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:35:35.585  INFO 59262 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 14:35:35.593  INFO 59262 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 2.306 seconds (JVM running for 3.084)
+2020-11-12 14:35:39.604  INFO 59262 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 14:35:39.605  INFO 59262 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 14:35:39.612  INFO 59262 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-11-12 14:38:07.648  INFO 59262 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:38:07.655  INFO 59262 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 14:38:11.208  INFO 59341 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 59341 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 14:38:11.212  INFO 59341 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 14:38:12.408  INFO 59341 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 14:38:12.415  INFO 59341 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 14:38:12.416  INFO 59341 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 14:38:12.469  INFO 59341 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 14:38:12.469  INFO 59341 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1119 ms
+2020-11-12 14:38:13.016  INFO 59341 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:38:13.195  INFO 59341 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 14:38:13.203  INFO 59341 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 2.447 seconds (JVM running for 3.068)
+2020-11-12 14:38:15.716  INFO 59341 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 14:38:15.717  INFO 59341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 14:38:15.721  INFO 59341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-11-12 14:42:20.507  INFO 59341 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:42:20.509  INFO 59341 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 14:42:24.384  INFO 59408 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 59408 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 14:42:24.391  INFO 59408 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 14:42:25.437  INFO 59408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 14:42:25.444  INFO 59408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 14:42:25.444  INFO 59408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 14:42:25.495  INFO 59408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 14:42:25.495  INFO 59408 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1055 ms
+2020-11-12 14:42:25.994  INFO 59408 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:42:26.163  INFO 59408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 14:42:26.171  INFO 59408 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 2.349 seconds (JVM running for 3.115)
+2020-11-12 14:42:30.964  INFO 59408 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 14:42:30.964  INFO 59408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 14:42:30.968  INFO 59408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-11-12 14:44:08.636  INFO 59408 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:44:08.639  INFO 59408 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 14:44:12.141  INFO 59433 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 59433 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 14:44:12.143  INFO 59433 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 14:44:13.673  INFO 59433 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 14:44:13.687  INFO 59433 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 14:44:13.687  INFO 59433 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 14:44:13.743  INFO 59433 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 14:44:13.743  INFO 59433 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1414 ms
+2020-11-12 14:44:14.223  INFO 59433 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:44:14.847  INFO 59433 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 14:44:14.856  INFO 59433 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 3.24 seconds (JVM running for 3.92)
+2020-11-12 14:44:15.632  INFO 59433 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 14:44:15.633  INFO 59433 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 14:44:15.638  INFO 59433 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-11-12 14:47:44.714  INFO 59433 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:47:44.715  INFO 59433 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 14:47:48.205  INFO 59521 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 59521 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 14:47:48.210  INFO 59521 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 14:47:49.460  INFO 59521 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 14:47:49.468  INFO 59521 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 14:47:49.468  INFO 59521 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 14:47:49.538  INFO 59521 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 14:47:49.539  INFO 59521 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1276 ms
+2020-11-12 14:47:50.138  INFO 59521 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:47:50.392  INFO 59521 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 14:47:50.407  INFO 59521 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 2.904 seconds (JVM running for 3.71)
+2020-11-12 14:47:56.728  INFO 59521 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 14:47:56.728  INFO 59521 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 14:47:56.732  INFO 59521 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-11-12 14:48:17.036  INFO 59521 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:48:17.038  INFO 59521 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 14:48:20.145  INFO 59552 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 59552 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 14:48:20.151  INFO 59552 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 14:48:21.467  INFO 59552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 14:48:21.474  INFO 59552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 14:48:21.475  INFO 59552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 14:48:21.547  INFO 59552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 14:48:21.548  INFO 59552 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1333 ms
+2020-11-12 14:48:22.213  INFO 59552 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:48:22.418  INFO 59552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 14:48:22.432  INFO 59552 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 2.784 seconds (JVM running for 3.512)
+2020-11-12 14:48:25.938  INFO 59552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 14:48:25.938  INFO 59552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 14:48:25.942  INFO 59552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-11-12 14:50:14.597  INFO 59552 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-12 14:50:15.269  INFO 59552 --- [http-nio-8080-exec-1] c.y.seckillspringboot.utils.CookieUtils  : write cookieName:seckill_login_token,cookieValue:B98EADEDD5D69083ADE14DBE10D3B76D
+2020-11-12 14:50:18.103  INFO 59552 --- [http-nio-8080-exec-10] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:_ga,cookieValue:GA1.1.1105055381.1599533227
+2020-11-12 14:50:18.103  INFO 59552 --- [http-nio-8080-exec-10] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:Idea-197aa45b,cookieValue:6c809aac-e733-40b3-ad5d-b1bf417f9a1f
+2020-11-12 14:50:18.103  INFO 59552 --- [http-nio-8080-exec-10] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:cookie_userphone,cookieValue:15067729719
+2020-11-12 14:50:18.104  INFO 59552 --- [http-nio-8080-exec-10] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:JSESSIONID,cookieValue:B98EADEDD5D69083ADE14DBE10D3B76D
+2020-11-12 14:50:18.104  INFO 59552 --- [http-nio-8080-exec-10] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:seckill_login_token,cookieValue:B98EADEDD5D69083ADE14DBE10D3B76D
+2020-11-12 14:50:18.104  INFO 59552 --- [http-nio-8080-exec-10] c.y.seckillspringboot.utils.CookieUtils  : return cookieName:seckill_login_token,cookieValue:B98EADEDD5D69083ADE14DBE10D3B76D
+2020-11-12 14:53:23.194  INFO 59552 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:53:23.198  INFO 59552 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-11-12 14:53:23.209  INFO 59552 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-11-12 14:53:28.806  INFO 59655 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 59655 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 14:53:28.809  INFO 59655 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 14:53:29.968  INFO 59655 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 14:53:29.976  INFO 59655 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 14:53:29.977  INFO 59655 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 14:53:30.037  INFO 59655 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 14:53:30.038  INFO 59655 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1131 ms
+2020-11-12 14:53:30.582  INFO 59655 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:53:30.777  INFO 59655 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 14:53:30.785  INFO 59655 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 2.644 seconds (JVM running for 3.678)
+2020-11-12 14:53:31.625  INFO 59655 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 14:53:31.625  INFO 59655 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 14:53:31.632  INFO 59655 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-11-12 14:56:39.457  INFO 59655 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:56:39.460  INFO 59655 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 14:56:42.941  INFO 59720 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 59720 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 14:56:42.944  INFO 59720 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 14:56:44.053  INFO 59720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 14:56:44.061  INFO 59720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 14:56:44.062  INFO 59720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 14:56:44.134  INFO 59720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 14:56:44.134  INFO 59720 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1092 ms
+2020-11-12 14:56:44.644  INFO 59720 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:56:44.947  INFO 59720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 14:56:44.956  INFO 59720 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 2.676 seconds (JVM running for 3.528)
+2020-11-12 14:56:52.129  INFO 59720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 14:56:52.130  INFO 59720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 14:56:52.134  INFO 59720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-11-12 14:58:16.196  INFO 59720 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:58:16.200  INFO 59720 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 14:58:21.512  INFO 59791 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 59791 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 14:58:21.517  INFO 59791 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 14:58:22.959  INFO 59791 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 14:58:22.966  INFO 59791 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 14:58:22.967  INFO 59791 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 14:58:23.030  INFO 59791 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 14:58:23.030  INFO 59791 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1316 ms
+2020-11-12 14:58:23.621  INFO 59791 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 14:58:23.845  INFO 59791 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 14:58:23.854  INFO 59791 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 3.069 seconds (JVM running for 4.087)
+2020-11-12 14:58:35.080  INFO 59791 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 14:58:35.080  INFO 59791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 14:58:35.084  INFO 59791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-11-12 14:59:14.882  INFO 59791 --- [http-nio-8080-exec-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-12 14:59:15.266  INFO 59791 --- [http-nio-8080-exec-4] c.y.seckillspringboot.utils.CookieUtils  : write cookieName:seckill_login_token,cookieValue:31E81E7966EE93A4C746DBC5DE51A46B
+2020-11-12 14:59:16.834  INFO 59791 --- [http-nio-8080-exec-5] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:_ga,cookieValue:GA1.1.1105055381.1599533227
+2020-11-12 14:59:16.834  INFO 59791 --- [http-nio-8080-exec-5] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:Idea-197aa45b,cookieValue:6c809aac-e733-40b3-ad5d-b1bf417f9a1f
+2020-11-12 14:59:16.834  INFO 59791 --- [http-nio-8080-exec-5] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:cookie_userphone,cookieValue:15067729719
+2020-11-12 14:59:16.835  INFO 59791 --- [http-nio-8080-exec-5] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:JSESSIONID,cookieValue:31E81E7966EE93A4C746DBC5DE51A46B
+2020-11-12 14:59:16.835  INFO 59791 --- [http-nio-8080-exec-5] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:seckill_login_token,cookieValue:31E81E7966EE93A4C746DBC5DE51A46B
+2020-11-12 14:59:16.835  INFO 59791 --- [http-nio-8080-exec-5] c.y.seckillspringboot.utils.CookieUtils  : return cookieName:seckill_login_token,cookieValue:31E81E7966EE93A4C746DBC5DE51A46B
+2020-11-12 15:16:55.016  INFO 59791 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 15:16:55.030  INFO 59791 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-11-12 15:16:55.042  INFO 59791 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-11-12 15:17:03.643  INFO 60138 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 60138 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 15:17:03.648  INFO 60138 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 15:17:04.721  INFO 60138 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 15:17:04.723  INFO 60138 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 15:17:04.755  INFO 60138 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2020-11-12 15:17:05.109  INFO 60138 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 15:17:05.116  INFO 60138 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 15:17:05.116  INFO 60138 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 15:17:05.180  INFO 60138 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 15:17:05.181  INFO 60138 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1444 ms
+2020-11-12 15:17:05.824  INFO 60138 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 15:17:05.931  WARN 60138 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 15:17:06.310  INFO 60138 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 15:17:06.319  INFO 60138 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 3.217 seconds (JVM running for 4.718)
+2020-11-12 15:17:06.495  INFO 60138 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 15:17:06.495  INFO 60138 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 15:17:06.503  INFO 60138 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-11-12 15:18:25.845  INFO 60138 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 15:18:25.846  INFO 60138 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 15:18:29.715  INFO 60208 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 60208 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 15:18:29.718  INFO 60208 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 15:18:30.551  INFO 60208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 15:18:30.554  INFO 60208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 15:18:30.588  INFO 60208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-11-12 15:18:30.955  INFO 60208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 15:18:30.962  INFO 60208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 15:18:30.962  INFO 60208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 15:18:31.023  INFO 60208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 15:18:31.023  INFO 60208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1260 ms
+2020-11-12 15:18:31.544  INFO 60208 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 15:18:31.626  WARN 60208 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 15:18:31.950  INFO 60208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 15:18:31.959  INFO 60208 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 2.578 seconds (JVM running for 3.182)
+2020-11-12 15:18:34.397  INFO 60208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 15:18:34.397  INFO 60208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 15:18:34.404  INFO 60208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-11-12 15:18:55.827  INFO 60208 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 15:18:55.828  INFO 60208 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 15:18:59.539  INFO 60253 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 60253 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 15:18:59.542  INFO 60253 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 15:19:00.294  INFO 60253 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 15:19:00.296  INFO 60253 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 15:19:00.319  INFO 60253 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-11-12 15:19:00.699  INFO 60253 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 15:19:00.707  INFO 60253 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 15:19:00.707  INFO 60253 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 15:19:00.774  INFO 60253 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 15:19:00.775  INFO 60253 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1139 ms
+2020-11-12 15:19:01.241  INFO 60253 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 15:19:01.324  WARN 60253 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 15:19:01.630  INFO 60253 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 15:19:01.638  INFO 60253 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 2.665 seconds (JVM running for 3.248)
+2020-11-12 15:19:04.633  INFO 60253 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 15:19:04.633  INFO 60253 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 15:19:04.638  INFO 60253 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-11-12 15:20:44.230  INFO 60253 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 15:20:44.236  INFO 60253 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 15:20:47.994  INFO 60299 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 60299 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 15:20:47.997  INFO 60299 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 15:20:48.752  INFO 60299 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 15:20:48.754  INFO 60299 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 15:20:48.784  INFO 60299 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-11-12 15:20:49.201  INFO 60299 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 15:20:49.208  INFO 60299 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 15:20:49.208  INFO 60299 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 15:20:49.275  INFO 60299 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 15:20:49.275  INFO 60299 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1193 ms
+2020-11-12 15:20:49.738  INFO 60299 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 15:20:49.819  WARN 60299 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 15:20:50.125  INFO 60299 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-12 15:20:50.134  INFO 60299 --- [main] c.y.s.SeckillSpringBootApplication       : Started SeckillSpringBootApplication in 2.645 seconds (JVM running for 3.198)
+2020-11-12 15:20:53.811  INFO 60299 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 15:20:53.811  INFO 60299 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-12 15:20:53.815  INFO 60299 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-11-12 15:20:59.861  INFO 60299 --- [http-nio-8080-exec-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-12 15:21:00.218  INFO 60299 --- [http-nio-8080-exec-3] c.y.seckillspringboot.utils.CookieUtils  : write cookieName:seckill_login_token,cookieValue:4D75822419CD184AD35BBF95A310F57F
+2020-11-12 15:33:27.228  INFO 60299 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 15:33:27.238  INFO 60299 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-11-12 15:33:27.245  INFO 60299 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-11-12 15:33:34.845  INFO 60579 --- [main] c.y.s.SeckillSpringBootApplication       : Starting SeckillSpringBootApplication on huangyucaideMacBook-Pro.local with PID 60579 (/Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot/target/classes started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 15:33:34.848  INFO 60579 --- [main] c.y.s.SeckillSpringBootApplication       : No active profile set, falling back to default profiles: default
+2020-11-12 15:33:35.424  INFO 60579 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 15:33:35.426  INFO 60579 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 15:33:35.452  INFO 60579 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2020-11-12 15:33:35.865  INFO 60579 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-12 15:33:35.873  INFO 60579 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 15:33:35.873  INFO 60579 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-12 15:33:35.930  INFO 60579 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 15:33:35.930  INFO 60579 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1009 ms
+2020-11-12 15:33:36.283  WARN 60579 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisService': Unsatisfied dependency expressed through field 'jedisPool'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'redis.clients.jedis.JedisPool' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-11-12 15:33:36.283  INFO 60579 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 15:33:36.285  INFO 60579 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-12 15:33:36.298  INFO 60579 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-12 15:33:36.414 ERROR 60579 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jedisPool in com.yucaihuang.seckillspringboot.redis.RedisService required a bean of type 'redis.clients.jedis.JedisPool' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'redis.clients.jedis.JedisPool' in your configuration.
+
+2020-11-12 15:50:06.782  INFO 61005 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 61005 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 15:50:06.784  INFO 61005 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 15:50:07.902  INFO 61005 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 15:50:07.908  INFO 61005 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 15:50:07.961  INFO 61005 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-11-12 15:50:10.172  INFO 61005 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 15:50:10.462  WARN 61005 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 15:50:11.388  INFO 61005 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.303 seconds (JVM running for 8.407)
+2020-11-12 15:50:11.929  INFO 61005 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 15:50:11.932  INFO 61005 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:03:02.370  INFO 61240 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 61240 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:03:02.372  INFO 61240 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:03:03.629  INFO 61240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:03:03.636  INFO 61240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:03:03.686  INFO 61240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-11-12 16:03:06.108  INFO 61240 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:03:06.565  WARN 61240 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:03:08.311  INFO 61240 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 6.831 seconds (JVM running for 9.39)
+2020-11-12 16:03:08.861  INFO 61240 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:03:08.863  INFO 61240 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:03:30.633  INFO 61264 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 61264 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:03:30.639  INFO 61264 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:03:31.994  INFO 61264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:03:32.000  INFO 61264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:03:32.063  INFO 61264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2020-11-12 16:03:34.118  INFO 61264 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:03:34.390  WARN 61264 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:03:35.499  INFO 61264 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.585 seconds (JVM running for 7.782)
+2020-11-12 16:03:35.937  INFO 61264 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:03:35.956  INFO 61264 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:05:58.514  INFO 61315 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 61315 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:05:58.516  INFO 61315 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:05:59.500  INFO 61315 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:05:59.504  INFO 61315 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:05:59.549  INFO 61315 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-11-12 16:06:01.591  INFO 61315 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:06:01.990  WARN 61315 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:06:02.838  INFO 61315 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.207 seconds (JVM running for 7.185)
+2020-11-12 16:06:03.447  INFO 61315 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:06:03.451  INFO 61315 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:06:27.934  INFO 61338 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 61338 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:06:27.936  INFO 61338 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:06:28.766  INFO 61338 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:06:28.769  INFO 61338 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:06:28.817  INFO 61338 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2020-11-12 16:06:30.606  INFO 61338 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:06:30.881  WARN 61338 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:06:31.614  INFO 61338 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 4.24 seconds (JVM running for 6.673)
+2020-11-12 16:06:31.897  INFO 61338 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:06:31.899  INFO 61338 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:09:31.558  INFO 61402 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 61402 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:09:31.560  INFO 61402 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:09:33.143  INFO 61402 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:09:33.147  INFO 61402 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:09:33.245  INFO 61402 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 0 Redis repository interfaces.
+2020-11-12 16:09:36.241  INFO 61402 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:09:36.615  WARN 61402 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:09:37.757  INFO 61402 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 7.529 seconds (JVM running for 10.396)
+2020-11-12 16:09:38.353  INFO 61402 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:09:38.358  INFO 61402 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:13:08.712  INFO 61575 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 61575 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:13:08.718  INFO 61575 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:13:10.183  INFO 61575 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:13:10.186  INFO 61575 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:13:10.251  INFO 61575 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2020-11-12 16:13:13.549  INFO 61575 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:13:14.023  WARN 61575 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:13:15.440  INFO 61575 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 7.922 seconds (JVM running for 10.93)
+2020-11-12 16:13:17.982  INFO 61575 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:13:17.991  INFO 61575 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:17:04.375  INFO 61656 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 61656 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:17:04.377  INFO 61656 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:17:05.478  INFO 61656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:17:05.483  INFO 61656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:17:05.537  INFO 61656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2020-11-12 16:17:08.346  INFO 61656 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:17:08.860  WARN 61656 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:17:09.818  INFO 61656 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 6.568 seconds (JVM running for 9.298)
+2020-11-12 16:17:10.247  INFO 61656 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:17:10.249  INFO 61656 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:17:22.929  INFO 61671 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 61671 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:17:22.931  INFO 61671 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:17:24.276  INFO 61671 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:17:24.280  INFO 61671 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:17:24.336  INFO 61671 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-11-12 16:17:26.359  INFO 61671 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:17:26.753  WARN 61671 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:17:27.603  INFO 61671 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.509 seconds (JVM running for 7.889)
+2020-11-12 16:17:27.986  INFO 61671 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:17:27.988  INFO 61671 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:24:10.524  INFO 61770 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 61770 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:24:10.526  INFO 61770 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:24:11.807  INFO 61770 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:24:11.818  INFO 61770 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:24:11.873  INFO 61770 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-11-12 16:24:14.339  INFO 61770 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:24:14.794  WARN 61770 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:24:15.705  INFO 61770 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 6.088 seconds (JVM running for 8.628)
+2020-11-12 16:24:18.156  INFO 61770 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:24:18.167  INFO 61770 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:24:24.953  INFO 61785 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 61785 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:24:24.954  INFO 61785 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:24:25.856  INFO 61785 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:24:25.859  INFO 61785 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:24:25.908  INFO 61785 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-11-12 16:24:27.795  INFO 61785 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:24:28.084  WARN 61785 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:24:28.871  INFO 61785 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 4.551 seconds (JVM running for 6.704)
+2020-11-12 16:24:29.236  INFO 61785 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:24:29.238  INFO 61785 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:26:03.518  INFO 61832 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 61832 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:26:03.521  INFO 61832 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:26:04.757  INFO 61832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:26:04.762  INFO 61832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:26:04.846  INFO 61832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 0 Redis repository interfaces.
+2020-11-12 16:26:06.956  INFO 61832 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:26:07.239  WARN 61832 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:26:08.137  INFO 61832 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.301 seconds (JVM running for 7.638)
+2020-11-12 16:26:08.580  INFO 61832 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:26:08.582  INFO 61832 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:54:55.633  INFO 62359 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 62359 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:54:55.634  INFO 62359 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:54:56.752  INFO 62359 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:54:56.756  INFO 62359 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:54:56.804  INFO 62359 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-11-12 16:54:58.989  INFO 62359 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:54:59.366  WARN 62359 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:55:00.252  INFO 62359 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.446 seconds (JVM running for 8.093)
+2020-11-12 16:55:00.762  INFO 62359 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:55:00.764  INFO 62359 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:55:24.770  INFO 62374 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 62374 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:55:24.775  INFO 62374 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:55:25.838  INFO 62374 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:55:25.841  INFO 62374 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:55:25.910  INFO 62374 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 0 Redis repository interfaces.
+2020-11-12 16:55:28.182  INFO 62374 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:55:28.500  WARN 62374 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:55:29.415  INFO 62374 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.311 seconds (JVM running for 7.48)
+2020-11-12 16:55:29.823  INFO 62374 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:55:29.824  INFO 62374 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:55:47.902  INFO 62384 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 62384 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:55:47.906  INFO 62384 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:55:48.913  INFO 62384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:55:48.919  INFO 62384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:55:48.967  INFO 62384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-11-12 16:55:50.727  INFO 62384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:55:50.999  WARN 62384 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:55:51.756  INFO 62384 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 4.594 seconds (JVM running for 6.762)
+2020-11-12 16:55:52.072  INFO 62384 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:55:52.074  INFO 62384 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:57:51.983  INFO 62433 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 62433 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:57:51.985  INFO 62433 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:57:53.016  INFO 62433 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:57:53.022  INFO 62433 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:57:53.094  INFO 62433 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 0 Redis repository interfaces.
+2020-11-12 16:57:55.378  INFO 62433 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:57:55.761  WARN 62433 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:57:56.627  INFO 62433 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.496 seconds (JVM running for 7.671)
+2020-11-12 16:57:57.042  INFO 62433 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:57:57.045  INFO 62433 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 16:58:53.693  INFO 62453 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 62453 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 16:58:53.694  INFO 62453 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 16:58:54.476  INFO 62453 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 16:58:54.479  INFO 62453 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 16:58:54.539  INFO 62453 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 0 Redis repository interfaces.
+2020-11-12 16:58:56.403  INFO 62453 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:58:56.753  WARN 62453 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 16:58:57.473  INFO 62453 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 4.526 seconds (JVM running for 6.589)
+2020-11-12 16:58:57.765  INFO 62453 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 16:58:57.766  INFO 62453 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 17:03:37.109  INFO 62529 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 62529 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 17:03:37.111  INFO 62529 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 17:03:38.081  INFO 62529 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 17:03:38.084  INFO 62529 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 17:03:38.133  INFO 62529 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2020-11-12 17:03:40.315  INFO 62529 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 17:03:40.611  WARN 62529 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 17:03:41.484  INFO 62529 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.162 seconds (JVM running for 7.452)
+2020-11-12 17:03:41.896  INFO 62529 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 17:03:41.899  INFO 62529 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 17:04:50.936  INFO 62559 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 62559 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 17:04:50.941  INFO 62559 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 17:04:52.195  INFO 62559 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 17:04:52.200  INFO 62559 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 17:04:52.272  INFO 62559 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 0 Redis repository interfaces.
+2020-11-12 17:04:54.439  INFO 62559 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 17:04:54.789  WARN 62559 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 17:04:55.621  INFO 62559 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.343 seconds (JVM running for 7.582)
+2020-11-12 17:04:56.030  INFO 62559 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 17:04:56.032  INFO 62559 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 17:06:04.849  INFO 62601 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 62601 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 17:06:04.851  INFO 62601 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 17:06:05.780  INFO 62601 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 17:06:05.786  INFO 62601 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 17:06:05.827  INFO 62601 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2020-11-12 17:06:08.242  INFO 62601 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 17:06:08.726  WARN 62601 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 17:06:09.894  INFO 62601 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.885 seconds (JVM running for 8.303)
+2020-11-12 17:06:10.433  INFO 62601 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 17:06:10.436  INFO 62601 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 17:58:39.438  INFO 63273 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 63273 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 17:58:39.440  INFO 63273 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 17:58:40.452  INFO 63273 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 17:58:40.456  INFO 63273 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 17:58:40.499  INFO 63273 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2020-11-12 17:58:42.647  INFO 63273 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 17:58:43.005  WARN 63273 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 17:58:43.851  INFO 63273 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.356 seconds (JVM running for 7.649)
+2020-11-12 17:58:44.335  INFO 63273 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 17:58:44.338  INFO 63273 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 18:00:00.456  INFO 63311 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 63311 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 18:00:00.499  INFO 63311 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 18:00:01.589  INFO 63311 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 18:00:01.596  INFO 63311 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 18:00:01.640  INFO 63311 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2020-11-12 18:00:03.996  INFO 63311 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 18:00:04.535  WARN 63311 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 18:00:05.578  INFO 63311 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.687 seconds (JVM running for 8.061)
+2020-11-12 18:00:06.063  INFO 63311 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 18:00:06.065  INFO 63311 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 18:00:37.576  INFO 63338 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 63338 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 18:00:37.585  INFO 63338 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 18:00:38.633  INFO 63338 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 18:00:38.638  INFO 63338 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 18:00:38.692  INFO 63338 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2020-11-12 18:00:40.965  INFO 63338 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 18:00:41.403  WARN 63338 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 18:00:42.201  INFO 63338 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.387 seconds (JVM running for 7.275)
+2020-11-12 18:00:42.535  INFO 63338 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 18:00:42.537  INFO 63338 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 18:01:21.454  INFO 63362 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 63362 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 18:01:21.461  INFO 63362 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 18:01:22.621  INFO 63362 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 18:01:22.624  INFO 63362 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 18:01:22.674  INFO 63362 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-11-12 18:01:24.873  INFO 63362 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 18:01:25.200  WARN 63362 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 18:01:25.995  INFO 63362 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.283 seconds (JVM running for 7.264)
+2020-11-12 18:01:26.372  INFO 63362 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 18:01:26.376  INFO 63362 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 18:02:22.418  INFO 63385 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 63385 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 18:02:22.420  INFO 63385 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 18:02:23.556  INFO 63385 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 18:02:23.558  INFO 63385 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 18:02:23.613  INFO 63385 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-11-12 18:02:25.809  INFO 63385 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 18:02:26.113  WARN 63385 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 18:02:26.964  INFO 63385 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 5.266 seconds (JVM running for 7.256)
+2020-11-12 18:02:27.387  INFO 63385 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 18:02:27.390  INFO 63385 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-12 18:06:00.546  INFO 63454 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Starting SeckillSpringBootApplicationTests on huangyucaideMacBook-Pro.local with PID 63454 (started by huangyucai in /Users/huangyucai/Documents/code/git_depositorys/github_KolinHuang/seckill-spring-boot)
+2020-11-12 18:06:00.548  INFO 63454 --- [main] c.y.s.SeckillSpringBootApplicationTests  : No active profile set, falling back to default profiles: default
+2020-11-12 18:06:01.707  INFO 63454 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-12 18:06:01.710  INFO 63454 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-12 18:06:01.774  INFO 63454 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2020-11-12 18:06:04.298  INFO 63454 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 18:06:04.689  WARN 63454 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-11-12 18:06:05.755  INFO 63454 --- [main] c.y.s.SeckillSpringBootApplicationTests  : Started SeckillSpringBootApplicationTests in 6.173 seconds (JVM running for 8.537)
+2020-11-12 18:06:06.435  INFO 63454 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 18:06:06.591  INFO 63454 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
