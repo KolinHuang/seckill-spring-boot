@@ -1,7 +1,10 @@
 package com.yucaihuang.seckillspringboot.controller;
 
+import com.yucaihuang.seckillspringboot.common.Const;
 import com.yucaihuang.seckillspringboot.param.LoginParam;
 import com.yucaihuang.seckillspringboot.pojo.User;
+import com.yucaihuang.seckillspringboot.redis.RedisService;
+import com.yucaihuang.seckillspringboot.redis.UserKey;
 import com.yucaihuang.seckillspringboot.result.Result;
 import com.yucaihuang.seckillspringboot.service.UserService;
 import com.yucaihuang.seckillspringboot.utils.CookieUtils;
@@ -27,15 +30,22 @@ public class LoginController {
     @Autowired
     UserService userService;
 
+    @Autowired
+    RedisService redisService;
+
+
     @PostMapping("/login")
     @ResponseBody
     public Result<User> doLogin(HttpServletRequest request, HttpServletResponse response, HttpSession session, @Valid LoginParam loginParam){
         Result<User> login = userService.login(loginParam);
         if(login.isSuccess()){
             CookieUtils.writeLoginToken(response, session.getId());
-            //TODO Redis，将用户名+seesionID作为键，登录的数据作为值放入redis，实现免登录
+            // Redis，将用户名+seesionID作为键，登录的数据作为值放入redis，实现免登录
+            redisService.set(UserKey.getByName, session.getId(),login.getData(), Const.RedisCacheExtime.REDIS_SESSION_EXTIME);
+            //免登录的备选，当redis不可用时，用cookie从数据库里读session
 
-            //免登录的初步实现
+            //不好不好，这样实现很不好，我们的目的本来就是把请求拦截在上游，这样搞会让很多请求打到DB的
+            //但是还是先放着吧，先把redis当缓存看
             session.setAttribute(session.getId(), loginParam.getMobile());
             //将用户名（电话号码）写入cookie中
             session.setAttribute("userPhone",loginParam.getMobile());

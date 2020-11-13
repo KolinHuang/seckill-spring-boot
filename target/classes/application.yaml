@@ -12,10 +12,10 @@ spring:
     servlet:
       content-type: text/html
     enabled: true
-    encoding: utf-8
-    mode: HTML5
+    encoding: UTF-8
     prefix: classpath:/templates/
     suffix: .html
+    mode: HTML
   #redis
   redis:
     host: 118.31.103.27

@@ -1,13 +1,17 @@
 package com.yucaihuang.seckillspringboot.service.impl;
 
 import com.yucaihuang.seckillspringboot.bo.GoodsBo;
+import com.yucaihuang.seckillspringboot.common.Const;
 import com.yucaihuang.seckillspringboot.dao.SeckillOrderMapper;
 import com.yucaihuang.seckillspringboot.pojo.OrderInfo;
 import com.yucaihuang.seckillspringboot.pojo.SeckillOrder;
 import com.yucaihuang.seckillspringboot.pojo.User;
+import com.yucaihuang.seckillspringboot.redis.RedisService;
+import com.yucaihuang.seckillspringboot.redis.SeckillKey;
 import com.yucaihuang.seckillspringboot.service.OrderService;
 import com.yucaihuang.seckillspringboot.service.SeckillGoodsService;
 import com.yucaihuang.seckillspringboot.service.SeckillOrderService;
+import com.yucaihuang.seckillspringboot.utils.MD5Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +19,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
 import java.util.Date;
+import java.util.UUID;
 
 @Service("seckillOrderService")
 public class SeckillOrderServiceImpl implements SeckillOrderService {
@@ -32,6 +37,9 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
 
     @Autowired
     OrderService orderService;
+
+    @Autowired
+    RedisService redisService;
 
     @Override
     public SeckillOrder getSeckillOrderByUIdAndGId(long userId, long goodsId) {
@@ -93,8 +101,12 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
         if(seckillOrder != null){
             return seckillOrder.getOrderId();
         }else {
-            //TODO isOver判断
-            return 0;
+            boolean isOver = getGoodsOver(goodsId);
+            if(isOver){
+                return -1;
+            }else {
+                return 0;
+            }
         }
     }
 
@@ -103,8 +115,8 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
         if(user == null || path == null){
             return false;
         }
-        //TODO pathOld
-        return true;
+        String pathOld = redisService.get(SeckillKey.getSeckillUrl, "" + user.getId() + "_" + goodsId, String.class);
+        return path.equals(pathOld);
     }
 
     @Override
@@ -112,18 +124,28 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
         if(user == null || goodsId <= 0){
             return null;
         }
-        String str = getMD5(user.getId());
+        //将加盐的秒杀URL放入redis
+        String str = MD5Util.md5(UUID.randomUUID() + "123456");
+        redisService.set(SeckillKey.getSeckillUrl, ""+user.getId()+"_"+goodsId,str, Const.RedisCacheExtime.GOODS_ID);
         return str;
     }
 
+
     /**
-     * 根据用户ID生成MD5值
-     * @param userId
+     * 设置秒杀商品结束标记
+     * @param goodsId
+     */
+    private void setGoodsOver(Long goodsId){
+        redisService.set(SeckillKey.isGoodsOver,""+goodsId,true,Const.RedisCacheExtime.GOODS_ID);
+    }
+
+    /**
+     * 查看秒杀商品是否已经结束
+     * @param goodsId
      * @return
      */
-    private String getMD5(long userId){
-        String base = userId + "/" + salt;
-        String md5 = DigestUtils.md5DigestAsHex(base.getBytes());
-        return md5;
+    private boolean getGoodsOver(Long goodsId){
+        return redisService.exists(SeckillKey.isGoodsOver,""+goodsId);
     }
+
 }
