@@ -22,6 +22,34 @@
         values (#{userId},#{orderId},#{goodsId})
     </insert>
 
+    <insert id="insertSelective" parameterType="SeckillOrder">
+        insert into seckill_order
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="orderId != null">
+                order_id,
+            </if>
+            <if test="goodsId != null">
+                goods_id,
+            </if>
+        </trim>
+         <trim prefix="values (" suffix=")" suffixOverrides=",">
+
+             <if test="userId != null">
+                 #{userId},
+             </if>
+             <if test="orderId != null">
+                 #{orderId},
+             </if>
+             <if test="goodsId != null">
+                 #{goodsId},
+             </if>
+         </trim>
+        </insert>
+
     <update id="update" parameterType="SeckillOrder">
         update seckill_order
         set

@@ -23,6 +23,8 @@ public interface OrderInfoMapper {
      */
     public int insert(OrderInfo orderInfo);
 
+    int insertSelective(OrderInfo orderInfo);
+
     /**
      * 查询所有订单信息
      * @return

@@ -14,11 +14,13 @@ public interface SeckillOrderMapper {
 
     public int insert(SeckillOrder seckillOrder);
 
+    int insertSelective(SeckillOrder seckillOrder);
+
     public int update(SeckillOrder seckillOrder);
 
     public int updateSelective(SeckillOrder seckillOrder);
 
-    public SeckillOrder querySeckillOrderById(Long id);
+    public SeckillOrder querySeckillOrderById(@Param("id") Long id);
 
     /**
      * 根据用户ID和货物ID查询秒杀订单

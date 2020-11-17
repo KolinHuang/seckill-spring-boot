@@ -83,7 +83,7 @@ class SeckillSpringBootApplicationTests {
 	@Test
 	void testSeckillOrderMapper(){
 
-		SeckillOrder seckillOrder = seckillOrderMapper.querySeckillOrderByUserIdAndGoodsId(1L,2L);
+		SeckillOrder seckillOrder = seckillOrderMapper.querySeckillOrderById(66L);
 		System.out.println(seckillOrder);
 	}
 

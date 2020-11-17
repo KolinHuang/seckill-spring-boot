@@ -39,6 +39,80 @@
         #{goodsPrice},#{orderChannel},#{status},#{createDate},#{payDate})
     </insert>
 
+    <insert id="insertSelective" parameterType="OrderInfo" useGeneratedKeys="true" keyProperty="id">
+        insert into order_info
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="userId != null" >
+                user_id,
+            </if>
+            <if test="goodsId != null" >
+                goods_id,
+            </if>
+            <if test="addrId != null" >
+                addr_id,
+            </if>
+            <if test="goodsName != null" >
+                goods_name,
+            </if>
+            <if test="goodsCount != null" >
+                goods_count,
+            </if>
+            <if test="goodsPrice != null" >
+                goods_price,
+            </if>
+            <if test="orderChannel != null" >
+                order_channel,
+            </if>
+            <if test="status != null" >
+                status,
+            </if>
+            <if test="createDate != null" >
+                create_date,
+            </if>
+            <if test="payDate != null" >
+                pay_date,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id},
+            </if>
+            <if test="userId != null" >
+                #{userId},
+            </if>
+            <if test="goodsId != null" >
+                #{goodsId},
+            </if>
+            <if test="addrId != null" >
+                #{addrId},
+            </if>
+            <if test="goodsName != null" >
+                #{goodsName},
+            </if>
+            <if test="goodsCount != null" >
+                #{goodsCount},
+            </if>
+            <if test="goodsPrice != null" >
+                #{goodsPrice},
+            </if>
+            <if test="orderChannel != null" >
+                #{orderChannel},
+            </if>
+            <if test="status != null" >
+                #{status},
+            </if>
+            <if test="createDate != null" >
+                #{createDate},
+            </if>
+            <if test="payDate != null" >
+                #{payDate},
+            </if>
+        </trim>
+    </insert>
+
     <update id="update" parameterType="OrderInfo">
         update order_info
         set

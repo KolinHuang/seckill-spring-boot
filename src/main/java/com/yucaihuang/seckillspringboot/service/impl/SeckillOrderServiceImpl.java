@@ -16,6 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 
 import java.util.Date;
@@ -46,6 +47,7 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
         return seckillOrderMapper.querySeckillOrderByUserIdAndGoodsId(userId,goodsId);
     }
 
+    @Transactional
     @Override
     public OrderInfo insert(User user, GoodsBo goodsBo) {
         //减库存
@@ -71,9 +73,10 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
             seckillOrder.setOrderId(orderInfo.getId());
             seckillOrder.setUserId(user.getId());
             //插入秒杀表
-            seckillOrderMapper.insert(seckillOrder);
+            seckillOrderMapper.insertSelective(seckillOrder);
             return orderInfo;
         }else {
+            setGoodsOver(goodsBo.getId());
             return null;
         }
     }
@@ -99,7 +102,7 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
     public long getSeckillResultByUIdAndGId(Long userId, long goodsId) {
         SeckillOrder seckillOrder = getSeckillOrderByUIdAndGId(userId, goodsId);
         if(seckillOrder != null){
-            return seckillOrder.getOrderId();
+            return seckillOrder.getId();
         }else {
             boolean isOver = getGoodsOver(goodsId);
             if(isOver){

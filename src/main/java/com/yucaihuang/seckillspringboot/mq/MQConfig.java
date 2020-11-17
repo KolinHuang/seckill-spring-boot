@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Configuration;
 public class MQConfig {
 
     public static final String SECKILL_QUEUE = "seckill.queue";
-    public static final String QUEUE = "queue";
 
     @Bean
     public MessageConverter getMessageConverter(){
