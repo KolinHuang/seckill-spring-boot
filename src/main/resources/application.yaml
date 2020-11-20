@@ -63,6 +63,19 @@ spring:
         max-interval: 10000
         multiplier: 1.0
 
+  #邮件发送服务
+  mail:
+    host: smtp.qq.com
+    username: xxxx@qq.com
+    password: xxxx
+    properties:
+      mail:
+        smtp:
+          auth: true
+          startttls:
+            enable: true
+            required: true
+
 mybatis:
   type-aliases-package: com.yucaihuang.seckillspringboot.pojo
   mapper-locations: classpath:Mapper/*.xml
@@ -74,3 +87,15 @@ logging:
     name: seckill-spring-boot.log
     path: /log
 
+mail:
+  send:
+    from: xxxx@qq.com
+  kill:
+    item:
+      success:
+        subject: 商品抢购成功
+        content: 您好，您已经成功抢购到商品：<strong style="color:red">%s</strong>，复制该链接并在浏览器打开即可查看详情：${system.domain.url}/kill/record/detail/%s. 请在1个小时内完成订单字符，超时将失效。
+
+system:
+  domain:
+    url: http://localhost:8083/kill

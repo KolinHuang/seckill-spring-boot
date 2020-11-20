@@ -2386,3 +2386,30 @@ java.lang.NullPointerException: null
 2020-11-17 16:00:50.226  INFO 34199 --- [http-nio-8080-exec-1] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:JSESSIONID,cookieValue:002491F9EDDF1F659B2A7307CBE74F72
 2020-11-17 16:00:50.226  INFO 34199 --- [http-nio-8080-exec-1] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:seckill_login_token,cookieValue:002491F9EDDF1F659B2A7307CBE74F72
 2020-11-17 16:00:50.226  INFO 34199 --- [http-nio-8080-exec-1] c.y.seckillspringboot.utils.CookieUtils  : return cookieName:seckill_login_token,cookieValue:002491F9EDDF1F659B2A7307CBE74F72
+2020-11-17 16:05:59.542  WARN 34199 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/seckill?useUnicode=true&useSSL=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, version : 1.2.2, lastPacketReceivedIdleMillis : 309231
+2020-11-17 16:05:59.545  WARN 34199 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/seckill?useUnicode=true&useSSL=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, version : 1.2.2, lastPacketReceivedIdleMillis : 311161
+2020-11-17 16:05:59.573  INFO 34199 --- [http-nio-8080-exec-5] c.y.seckillspringboot.utils.CookieUtils  : write cookieName:seckill_login_token,cookieValue:002491F9EDDF1F659B2A7307CBE74F72
+2020-11-17 16:06:00.960  INFO 34199 --- [http-nio-8080-exec-8] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:_ga,cookieValue:GA1.1.1105055381.1599533227
+2020-11-17 16:06:00.960  INFO 34199 --- [http-nio-8080-exec-8] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:Idea-197aa45b,cookieValue:6c809aac-e733-40b3-ad5d-b1bf417f9a1f
+2020-11-17 16:06:00.961  INFO 34199 --- [http-nio-8080-exec-8] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:cookie_userphone,cookieValue:15067729719
+2020-11-17 16:06:00.961  INFO 34199 --- [http-nio-8080-exec-8] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:JSESSIONID,cookieValue:002491F9EDDF1F659B2A7307CBE74F72
+2020-11-17 16:06:00.961  INFO 34199 --- [http-nio-8080-exec-8] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:seckill_login_token,cookieValue:002491F9EDDF1F659B2A7307CBE74F72
+2020-11-17 16:06:00.961  INFO 34199 --- [http-nio-8080-exec-8] c.y.seckillspringboot.utils.CookieUtils  : return cookieName:seckill_login_token,cookieValue:002491F9EDDF1F659B2A7307CBE74F72
+2020-11-17 16:06:02.216  INFO 34199 --- [http-nio-8080-exec-9] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:_ga,cookieValue:GA1.1.1105055381.1599533227
+2020-11-17 16:06:02.217  INFO 34199 --- [http-nio-8080-exec-9] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:Idea-197aa45b,cookieValue:6c809aac-e733-40b3-ad5d-b1bf417f9a1f
+2020-11-17 16:06:02.217  INFO 34199 --- [http-nio-8080-exec-9] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:cookie_userphone,cookieValue:15067729719
+2020-11-17 16:06:02.217  INFO 34199 --- [http-nio-8080-exec-9] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:JSESSIONID,cookieValue:002491F9EDDF1F659B2A7307CBE74F72
+2020-11-17 16:06:02.217  INFO 34199 --- [http-nio-8080-exec-9] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:seckill_login_token,cookieValue:002491F9EDDF1F659B2A7307CBE74F72
+2020-11-17 16:06:02.218  INFO 34199 --- [http-nio-8080-exec-9] c.y.seckillspringboot.utils.CookieUtils  : return cookieName:seckill_login_token,cookieValue:002491F9EDDF1F659B2A7307CBE74F72
+2020-11-17 16:06:02.265  INFO 34199 --- [http-nio-8080-exec-10] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:_ga,cookieValue:GA1.1.1105055381.1599533227
+2020-11-17 16:06:02.265  INFO 34199 --- [http-nio-8080-exec-10] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:Idea-197aa45b,cookieValue:6c809aac-e733-40b3-ad5d-b1bf417f9a1f
+2020-11-17 16:06:02.265  INFO 34199 --- [http-nio-8080-exec-10] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:cookie_userphone,cookieValue:15067729719
+2020-11-17 16:06:02.265  INFO 34199 --- [http-nio-8080-exec-10] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:JSESSIONID,cookieValue:002491F9EDDF1F659B2A7307CBE74F72
+2020-11-17 16:06:02.265  INFO 34199 --- [http-nio-8080-exec-10] c.y.seckillspringboot.utils.CookieUtils  : read cookieName:seckill_login_token,cookieValue:002491F9EDDF1F659B2A7307CBE74F72
+2020-11-17 16:06:02.265  INFO 34199 --- [http-nio-8080-exec-10] c.y.seckillspringboot.utils.CookieUtils  : return cookieName:seckill_login_token,cookieValue:002491F9EDDF1F659B2A7307CBE74F72
+2020-11-17 16:07:22.440  INFO 34199 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-11-17 16:07:22.597  INFO 34199 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-11-17 16:07:22.638  INFO 34199 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-11-17 16:07:22.639  INFO 34199 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-17 16:07:22.673  INFO 34199 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-11-17 16:07:22.676  INFO 34199 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
