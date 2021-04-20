@@ -15,8 +15,8 @@ public class RedisConfig {
     private int port;
     @Value("${spring.redis.timeout}")
     private int timeout;//秒
-    @Value("${spring.redis.password}")
-    private String password;
+//    @Value("${spring.redis.password}")
+//    private String password;
     @Value("${spring.redis.jedis.pool.max-active}")
     private int poolMaxActive;
     @Value("${spring.redis.jedis.pool.max-idle}")
@@ -41,12 +41,12 @@ public class RedisConfig {
     public void setTimeout(int timeout) {
         this.timeout = timeout;
     }
-    public String getPassword() {
-        return password;
-    }
-    public void setPassword(String password) {
-        this.password = password;
-    }
+//    public String getPassword() {
+//        return password;
+//    }
+//    public void setPassword(String password) {
+//        this.password = password;
+//    }
 
     public int getPoolMaxActive() {
         return poolMaxActive;

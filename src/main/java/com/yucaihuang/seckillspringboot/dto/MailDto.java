@@ -22,4 +22,5 @@ public class MailDto {
     private String content;
     //接收人
     private String[] tos;
+
 }

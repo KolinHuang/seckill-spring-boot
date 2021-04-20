@@ -18,16 +18,16 @@ spring:
     mode: HTML
   #redis
   redis:
-    host: 118.31.103.27
+    host: 10.66.71.120
     port: 6379
     timeout: 10000
     jedis:
       pool:
         max-idle: 5000
-        max-wait: 10000
         max-active: 5000
         min-idle: 0
-    password: 123456
+        max-wait: -1
+#    password: 123456
     database: 0
   #静态资源配置
   resources:
@@ -41,27 +41,27 @@ spring:
     static-locations: classpath:/static/
 
   #消息队列
-  rabbitmq:
-    host: 118.31.103.27
-    port: 5672
-    username: guest
-    password: guest
-    virtual-host: /
-    listener:
-      simple:
-        concurrency: 10
-        max-concurrency: 10
-        prefetch: 1
-        auto-startup: true
-        default-requeue-rejected: true
-
-    template:
-      retry:
-        enabled: true
-        initial-interval: 1000
-        max-attempts: 3
-        max-interval: 10000
-        multiplier: 1.0
+#  rabbitmq:
+#    host: 118.31.103.27
+#    port: 5672
+#    username: guest
+#    password: guest
+#    virtual-host: /
+#    listener:
+#      simple:
+#        concurrency: 10
+#        max-concurrency: 10
+#        prefetch: 1
+#        auto-startup: true
+#        default-requeue-rejected: true
+#
+#    template:
+#      retry:
+#        enabled: true
+#        initial-interval: 1000
+#        max-attempts: 3
+#        max-interval: 10000
+#        multiplier: 1.0
 
   #邮件发送服务
   mail:
@@ -99,3 +99,4 @@ mail:
 system:
   domain:
     url: http://localhost:8083/kill
+

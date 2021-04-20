@@ -33,6 +33,11 @@ public class CookieUtils {
         return null;
     }
 
+    /**
+     * 往response里写token
+     * @param response
+     * @param token
+     */
     public static void writeLoginToken(HttpServletResponse response, String token){
         Cookie cookie = new Cookie(COOKIE_NAME, token);
         cookie.setDomain(COOKIE_DOMAIN);

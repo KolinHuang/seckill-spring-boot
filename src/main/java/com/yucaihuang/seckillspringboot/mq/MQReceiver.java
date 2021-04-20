@@ -30,6 +30,10 @@ public class MQReceiver {
     @Autowired
     SeckillOrderService seckillOrderService;
 
+    /**
+     * 监听队列事件，当有消息时，就处理
+     * @param message
+     */
     @RabbitListener(queues = MQConfig.SECKILL_QUEUE)
     public void receive(String message){
         logger.info("receive message:" + message);
@@ -42,6 +46,7 @@ public class MQReceiver {
         if(stock <= 0){
             return;
         }
+        //检查是否已经有该订单了，有必要吗？刚刚在放入队列的时候已经检查过一次了
         SeckillOrder order = seckillOrderService.getSeckillOrderByUIdAndGId(user.getId(), goodsId);
         if(order != null){
             return;

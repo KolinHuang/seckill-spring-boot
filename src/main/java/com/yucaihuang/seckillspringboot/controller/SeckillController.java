@@ -24,6 +24,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Controller
 @RequestMapping("/seckill")
@@ -42,7 +43,7 @@ public class SeckillController implements InitializingBean {
     MQSender mqSender;
 
     //将秒杀的商品状态放入Map中
-    private HashMap<Long, Boolean> localOverMap = new HashMap<>();
+    private ConcurrentHashMap<Long, Boolean> localOverMap = new ConcurrentHashMap<>();
 
 
     @Override
@@ -52,7 +53,12 @@ public class SeckillController implements InitializingBean {
             return;
         }
         for (GoodsBo goods : goodsList) {
+            //缓存预热
             redisService.set(GoodsKey.getSeckillGoodsStock,""+goods.getId(),goods.getStockCount(), Const.RedisCacheExtime.GOODS_LIST);
+            //这里有待商榷，少量秒杀商品的情况下，倒是可以用内存来提高效率，但是当商品量非常大时，内存会被占去一大块
+            //但是，通常不可能用单体应用来承担所有商品秒杀，应当是已经经过负载均衡后的请求会被放到这里。
+            //所以说，当前应用所能查询到的商品是有限的，查询的也应当是多个数据库中的一个。
+            //是否使用内存来提高效率，应该视具体情况而定，建议是不要，因为内存很宝贵。
             localOverMap.put(goods.getId(),false);
         }
     }
@@ -75,8 +81,14 @@ public class SeckillController implements InitializingBean {
         if(over){
             return Result.error(CodeMsg.MIAO_SHA_OVER);
         }
+        //如果有10个线程同时走到了这里，库存只有9个
+        //那么会不会出现并发问题？多个线程会不会同时把9-1呢？不会，decr是原子操作
         Long stock = redisService.decr(GoodsKey.getSeckillGoodsStock, "" + goodsId);
         if(stock < 0){
+            //如果有多个线程同时调用这条语句，会不会有线程安全问题？
+            //ConcurrentHashMap能保证在put和get时，对于一个槽位的操作是原子的
+            //但是在进入这个if块到执行put方法之前，这段时间其他线程很可能get了
+            //但是最终还是会走到这里来
             localOverMap.put(goodsId,true);
             return Result.error(CodeMsg.MIAO_SHA_OVER);
         }
@@ -119,7 +131,7 @@ public class SeckillController implements InitializingBean {
         return Result.success(result);
     }
 
-    @AccessLimit(seconds = 5, maxCount = 5, needLogin = true)
+    @AccessLimit(seconds = 5, maxCount = 5)
     @GetMapping("/path")
     @ResponseBody
     public Result<String> getSeckillPath(HttpServletRequest request,@RequestParam("goodsId") long goodsId){
