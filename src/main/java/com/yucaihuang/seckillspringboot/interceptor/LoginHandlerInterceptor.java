@@ -17,10 +17,11 @@ public class LoginHandlerInterceptor implements HandlerInterceptor {
             request.getRequestDispatcher("/page/login").forward(request,response);
             return false;
         }
+        return true;
         //接口限流
-        HandlerMethod handlerMethod = (HandlerMethod) handler;
-        AccessLimit accessLimit = handlerMethod.getMethodAnnotation(AccessLimit.class);
-        if(accessLimit == null) return true;
+//        HandlerMethod handlerMethod = (HandlerMethod) handler;
+//        AccessLimit accessLimit = handlerMethod.getMethodAnnotation(AccessLimit.class);
+//        if(accessLimit == null) return true;
 
 
     }

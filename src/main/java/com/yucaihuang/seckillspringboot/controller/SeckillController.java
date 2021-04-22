@@ -1,5 +1,6 @@
 package com.yucaihuang.seckillspringboot.controller;
 
+import com.google.common.util.concurrent.RateLimiter;
 import com.yucaihuang.seckillspringboot.annotation.AccessLimit;
 import com.yucaihuang.seckillspringboot.bo.GoodsBo;
 import com.yucaihuang.seckillspringboot.common.Const;
@@ -25,6 +26,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.TimeUnit;
 
 @Controller
 @RequestMapping("/seckill")
@@ -38,6 +40,8 @@ public class SeckillController implements InitializingBean {
     @Autowired
     SeckillOrderService seckillOrderService;
 
+    //创建令牌桶实例
+    private RateLimiter rateLimiter = RateLimiter.create(100);
 
     @Autowired
     MQSender mqSender;
@@ -84,6 +88,9 @@ public class SeckillController implements InitializingBean {
         //如果有10个线程同时走到了这里，库存只有9个
         //那么会不会出现并发问题？多个线程会不会同时把9-1呢？不会，decr是原子操作
         Long stock = redisService.decr(GoodsKey.getSeckillGoodsStock, "" + goodsId);
+        if(stock == null){
+            //说明redis发生了故障，
+        }
         if(stock < 0){
             //如果有多个线程同时调用这条语句，会不会有线程安全问题？
             //ConcurrentHashMap能保证在put和get时，对于一个槽位的操作是原子的
@@ -104,6 +111,7 @@ public class SeckillController implements InitializingBean {
         mm.setUser(user);
         mm.setGoodsId(goodsId);
         mqSender.sendSeckillMessage(mm);
+        //在这里显示，您正在排队
         return Result.success(0);
 
 
@@ -130,8 +138,7 @@ public class SeckillController implements InitializingBean {
         long result = seckillOrderService.getSeckillResultByUIdAndGId(user.getId(), goodsId);
         return Result.success(result);
     }
-
-    @AccessLimit(seconds = 5, maxCount = 5)
+    @AccessLimit(seconds = 5,maxCount = 5)
     @GetMapping("/path")
     @ResponseBody
     public Result<String> getSeckillPath(HttpServletRequest request,@RequestParam("goodsId") long goodsId){
@@ -139,6 +146,10 @@ public class SeckillController implements InitializingBean {
         User user = redisService.get(UserKey.getByName, loginToken, User.class);
         if(user == null){
             return Result.error(CodeMsg.USER_NO_LOGIN);
+        }
+        //如果在1秒内没有获取到令牌，那就抛弃请求
+        if(!rateLimiter.tryAcquire(1, TimeUnit.SECONDS)){
+            return Result.error(CodeMsg.RATE_LIMIT);
         }
         String url = seckillOrderService.createUrl(user, goodsId);
         return Result.success(url);
